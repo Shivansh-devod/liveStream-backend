@@ -18,7 +18,7 @@ const server = http.createServer(app);
 // CORS configuration for Socket.io
 const io = socketIo(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: process.env.CLIENT_URL || "https://live-stream-frontend-six.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -44,7 +44,7 @@ app.use(helmet());
 // CORS configuration
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: process.env.CLIENT_URL || "https://https://live-stream-frontend-six.vercel.applive-stream-frontend-six.vercel.app",
     credentials: true,
   })
 );
